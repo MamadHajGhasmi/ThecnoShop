@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br>
+    <div class="container">
+    <div class="row">
+            <div class="col-10">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        &nbsp;
+                    </form>
+            </div>
+    </div>
+    </div>
+
+{% endblock %}
+{% block footer %}
+    <br><br><br><br><br><br><br>
+<footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Made by Mohammad Hajghasemi</p></div>
+</footer>
+{% endblock %}
